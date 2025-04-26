@@ -1,0 +1,225 @@
+<---
+import Layout from '../layouts/Layout.astro';
+import { BookA, ClipboardPen, Computer, Camera, PersonStanding, MessageCircleMore, Speech, UserRoundSearch, FileUser } from '@lucide/astro'
+
+// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
+// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+---
+
+<Layout
+  title="Portfolio de Gabriel Fernández"
+  description="Estudiante desarrollador front-end y diseñador web, enfocado en la creación de interfaces y experiencias de usuario."
+>
+
+
+<main class="flex flex-col mx-auto max-w-4xl gap-10">
+    <section>
+		<div class="flex flex-row items-center pt-20 ">
+        <div class="flex-1">	
+            <h1 class="text-7xl font-bold text-gray-200"> Gabriel Fernández </h1>	
+			<h2 class="pt-10 text-xl text-slate-300 font-semibold max-w-[450px] mb-6">
+				Estudiante desarrollador front-end y diseñador web, enfocado en la creación de interfaces y experiencias de usuario.
+			  </h2>        
+			  
+			  <a href="/cv.pdf" download class="inline-block bg-black hover:bg-gray-800
+			   text-white font-semibold py-2 px-4 rounded-xl shadow border-2 border-white transition duration-300">
+				Descargar CV
+				<FileUser class='inline-block ml-2'/>
+			  </a>
+		
+			</div>
+        <img 
+            src="/src/assets/xd.png"
+            class="rounded-full w-40 h-40 border-4 border-gray-200 shadow-lg mb-auto"
+        />
+		
+	</div>
+	
+    </section>
+	<hr class="border-gray-600 my-10" />
+
+	<section class="mb-4">
+		<h2 class="text-4xl font-semibold text-white mb-6">Formación Académica</h2>
+		<div class=" rounded-xl text-slate-300 shadow-lg">
+		  <p class="text-lg font-medium">Analista Programador Computacional</p>
+		  <p>Duoc UC - Sede San Bernardo</p>
+		  <p class="italic">Marzo 2023 - Presente</p>
+		</div>
+	  </section>
+
+	<section class="mb-10">
+		<nav class="flex flex-col pt-4">
+		  <h1 class="text-4xl font-semibold text-white mb-10">Tecnologías usadas</h1>
+		  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
+	  
+			<div class="group bg-gradient-to-b to-black p-5 rounded-2xl shadow-xl border border-gray-700 text-white flex flex-col items-center transform transition duration-300 hover:scale-105 hover:shadow-2xl hover:border-white animate-fade-in">
+			  <img src="/src/assets/html.png" alt="HTML" class="w-12 h-12 mb-3 transition-transform duration-300 group-hover:rotate-6" />
+			  <p class="font-medium">HTML</p>
+			</div>
+	  
+			<div class="group bg-gradient-to-b to-black p-5 rounded-2xl shadow-xl border border-gray-700 text-white flex flex-col items-center transform transition duration-300 hover:scale-105 hover:shadow-2xl hover:border-white animate-fade-in">
+			  <img src="/src/assets/css.png" alt="CSS" class="w-10 h-12 mb-3 transition-transform duration-300 group-hover:rotate-6" />
+			  <p class="font-medium">CSS</p>
+			</div>
+	  
+			<div class="group bg-gradient-to-b to-black p-5 rounded-2xl shadow-xl border border-gray-700 text-white flex flex-col items-center transform transition duration-300 hover:scale-105 hover:shadow-2xl hover:border-white animate-fade-in">
+			  <img src="/src/assets/javascript.png" alt="Javascript" class="w-12 h-12 mb-3 transition-transform duration-300 group-hover:rotate-6" />
+			  <p class="font-medium">Javascript</p>
+			</div>
+	  
+			<div class="group bg-gradient-to-b to-black p-5 rounded-2xl shadow-xl border border-gray-700 text-white flex flex-col items-center transform transition duration-300 hover:scale-105 hover:shadow-2xl hover:border-white animate-fade-in">
+			  <img src="/src/assets/tailwind.png" alt="Tailwind" class="w-12 h-12 mb-3 transition-transform duration-300 group-hover:rotate-6" />
+			  <p class="font-medium">Tailwind</p>
+			</div>
+	  
+			<div class="group bg-gradient-to-b to-black p-5 rounded-2xl shadow-xl border border-gray-700 text-white flex flex-col items-center transform transition duration-300 hover:scale-105 hover:shadow-2xl hover:border-white animate-fade-in">
+			  <img src="/src/assets/firebase.png" alt="Firebase" class="w-12 h-12 mb-3 transition-transform duration-300 group-hover:rotate-6" />
+			  <p class="font-medium">Firebase</p>
+			</div>
+	  
+			<div class="group bg-gradient-to-b to-black p-5 rounded-2xl shadow-xl border border-gray-700 text-white flex flex-col items-center transform transition duration-300 hover:scale-105 hover:shadow-2xl hover:border-white animate-fade-in">
+			  <img src="/src/assets/python.png" alt="Python" class="w-12 h-12 mb-3 transition-transform duration-300 group-hover:rotate-6" />
+			  <p class="font-medium">Python</p>
+			</div>
+			
+	  
+		  </div>
+		</nav>
+	</section>
+
+
+	
+
+
+
+	<section class="mb-10">
+		<h2 class="text-3xl font-semibold text-white mb-8">Habilidades Secundarias</h2>
+		<div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+		  <div class="flex items-center gap-4 bg-gradient-to-b to-black p-4 rounded-xl shadow-lg border border-gray-700">
+			<BookA class="w-8 h-8" />
+			<p class="text-lg font-medium text-slate-300">Inglés avanzado</p>
+		  </div>
+		  <div class="flex items-center gap-4 bg-gradient-to-b to-black p-4 rounded-xl shadow-lg border border-gray-700">
+			<ClipboardPen class="w-8 h-8" />
+			<p class="text-lg font-medium text-slate-300">Ingeniería de requerimientos</p>
+		  </div>
+		  <div class="flex items-center gap-4 bg-gradient-to-b to-black p-4 rounded-xl shadow-lg border border-gray-700">
+			<Camera class="w-8 h-8" />
+			<p class="text-lg font-medium text-slate-300">Photoshop</p>
+		  </div>
+		  <div class="flex items-center gap-4 bg-gradient-to-b to-black p-4 rounded-xl shadow-lg border border-gray-700">
+			<Computer class="w-8 h-8" />
+			<p class="text-lg font-medium text-slate-300">Office</p>
+		  </div>
+		</div>
+	  
+		<h2 class="text-3xl font-semibold text-white mb-8 mt-14">Aptitudes</h2>
+		<div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+		  <div class="flex items-center gap-4 bg-gradient-to-b to-black p-4 rounded-xl shadow-lg border border-gray-700">
+			<PersonStanding class="w-8 h-8" />
+			<p class="text-lg font-medium text-slate-300">Liderazgo</p>
+		  </div>
+		  <div class="flex items-center gap-4 bg-gradient-to-b to-black p-4 rounded-xl shadow-lg border border-gray-700">
+			<Speech class="w-8 h-8" />
+			<p class="text-lg font-medium text-slate-300">Iniciativa</p>
+		  </div>
+		  <div class="flex items-center gap-4 bg-gradient-to-b to-black p-4 rounded-xl shadow-lg border border-gray-700">
+			<MessageCircleMore class="w-8 h-8" />
+			<p class="text-lg font-medium text-slate-300">Pensamiento crítico</p>
+		  </div>
+		  <div class="flex items-center gap-4 bg-gradient-to-b to-black p-4 rounded-xl shadow-lg border border-gray-700">
+			<UserRoundSearch class="w-8 h-8" />
+			<p class="text-lg font-medium text-slate-300">Adaptabilidad</p>
+		  </div>
+		</div>
+	  </section>
+
+	  <section class="mb-10">
+		<h2 class="text-3xl font-semibold text-white mb-8">Proyectos</h2>
+		<div class="flex flex-col md:flex-row gap-6 bg-gradient-to-b to-black p-6 rounded-xl shadow-lg border border-gray-700 text-slate-300">
+	  
+		  <!-- Carrusel -->
+		  <div class="w-full">
+			<div id="default-carousel" class="relative w-full h-max" data-carousel="slide">
+			  <div class="relative h-[600px] overflow-hidden rounded-lg">
+				<div class="hidden" data-carousel-item>
+				  <img src="/src/assets/pantalla1.png" class="w-full h-full object-contain rounded-lg" alt="Pantalla 1">
+				</div>
+				<div class="hidden " data-carousel-item>
+				  <img src="/src/assets/pantalla2.png" class="w-full h-full object-contain rounded-lg" alt="Pantalla 2">
+				</div>
+				<div class="hidden" data-carousel-item>
+				  <img src="/src/assets/pantalla3.png" class="w-full h-full object-contain rounded-lg" alt="Pantalla 3">
+				</div>
+			  </div>
+	  
+
+	  
+			  <!-- Flechas -->
+			  <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer" data-carousel-prev>
+				<span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 hover:bg-white/50">
+				  <svg class="w-4 h-4 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/></svg>
+				</span>
+			  </button>
+			  <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer" data-carousel-next>
+				<span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 hover:bg-white/50">
+				  <svg class="w-4 h-4 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/></svg>
+				</span>
+			  </button>
+			</div>
+		  </div>
+	  
+	
+		  <div class="w-full md:w-1/2 flex flex-col justify-top">
+			<h3 class="text-4xl font-semibold text-white mb-4">GameStore</h3>
+			<p class="text-slate-300 text-base leading-relaxed">
+			  Proyecto académico de tienda de videojuegos. <br><br>El proyecto incluye un carrito de compras, un sistema de autenticación y una interfaz de usuario intuitiva.
+			</p>
+		  </div>
+		</div>
+	  </section>
+
+
+			<section class="rounded-xl text-slate-300 shadow-lg mb-10">
+				<h2 class="text-3xl font-semibold text-white mb-4">Mail</h2>
+				<div class="flex w-full flex-row items-center gap-4">
+				  <input
+					id="correo"
+					type="text"
+					disabled
+					class="bg-white w-xl py-2 px-4 rounded-lg text-slate-800 font-medium"
+					value="ga.fernandezp@duocuc.cl"
+				  />
+				  
+				  <div class="flex gap-3">
+					<a
+					  href="mailto:ga.fernandezp@duocuc.cl"
+					  target="_blank"
+					  class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-lg shadow transition duration-200"
+					>
+					  Escribir
+					</a>
+			  
+						<button
+						onclick="navigator.clipboard.writeText('ga.fernandezp@duocuc.cl')"
+					  class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-lg shadow transition duration-200"
+					>
+					  Copiar
+					</button>
+				  </div>
+				</div>
+			  </section>
+
+
+
+
+</main>
+
+<style>
+	html, body {
+		font-family: 'Poppins', sans-serif;
+		margin: 0;
+		background: linear-gradient(to bottom, #0a0a0a, #141414);
+		scroll-behavior: smooth;
+	}
+</style>
